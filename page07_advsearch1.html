@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.css">
+	<link rel="stylesheet" href="css/main.css"><!-- /.custom stylesheet -->
+</head>
+
+<body>
+
+<div class="outer">
+
+<header>
+<div class="container">
+<div class="row">
+<nav class="navbar navbar-expand-lg navbar-light">
+	<a class="navbar-brand" href="index.html"><img src="img/logo_urbtrix.png" class="img-fluid"></a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>	
+
+    <div class="mobilebar">
+    	<a class="nav-link search" href="#"><span></span></a>
+		<a class="nav-link cart" href="page04.html"><span>2</span></a>
+    </div>
+
+	<div class="collapse navbar-collapse" id="navbarMain">
+	<ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+			<a class="nav-link search" href="#"><span></span></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="page07_advsearch2.html">Events</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Venue</a>
+		</li>
+		<li>
+			<div class="dropdown-divider"></div>
+		</li>
+		<li class="nav-item dropdown show">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Member</a>
+			<div class="dropdown-menu show" aria-labelledby="navbarDropdown">
+				<span>
+					<a class="dropdown-item" href="Page09_SiginCreateaccount.html">Login</a>
+					<a class="dropdown-item" href="Page10_PasswordEnquiry.html">Forget Password</a>
+					<a class="dropdown-item" href="Page09_SiginCreateaccount.html">Register</a>
+				</span>
+			</div>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Order Record</a>
+			</li>
+			<li class="nav-item lang">
+				<a class="nav-link en active" href="#">EN</a><a class="nav-link tc" href="#">繁體</a><a class="nav-link sc" href="#">简体</a>
+			</li>
+			<li class="nav-item fsize">
+            	<p class="name">Text Size:</p>
+				<p class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn fsize_s shadow-none active">
+					<input type="radio" name="options" id="" autocomplete="off" checked> A
+				</label>
+				<label class="btn fsize_m shadow-none">
+					<input type="radio" name="options" id="" autocomplete="off"> A
+				</label>
+				<label class="btn fsize_l shadow-none">
+					<input type="radio" name="options" id="" autocomplete="off"> A
+				</label>
+                </p>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link cart" href="page04.html"><span>2</span></a>
+			</li>
+		</li>
+	</ul>
+	</div>
+</nav>
+</div>	
+</div>
+</header>
+	
+<div class="advsearch">
+    <div class="container">
+		<h1>Advanced Search</h1>
+		<div class="hotsearch">
+			<p>Hot Keyword Search:</p>
+			<a href="javascript:;">Violin</a>
+			<a href="javascript:;">Ballet</a>
+			<a href="javascript:;">Opera</a>
+			<a href="javascript:;">The Rite of Spring</a>
+			<a href="javascript:;">Joey Yung</a>
+			<a href="javascript:;">William So</a>
+			<a href="javascript:;">McDull</a>
+			<a href="javascript:;">The Normal Heart</a>
+			<a href="javascript:;">Red Poppies</a>
+			<a href="javascript:;">Festival</a>
+			<a href="javascript:;">Film</a>
+			<a href="javascript:;">Jazz</a>
+			<a href="javascript:;">Sinfonietta</a>
+		</div> 
+
+		<div class="searchbox">
+		
+        	<div class="searchform">
+				<ul>
+					<li>
+						<p><span class="name">Event Name:</span><input type="text" class="form-control" placeholder="Event Name"></p>
+					</li>
+					<li>
+						<p><span class="name">Presenter:</span><input type="text" class="form-control" placeholder="Presenter Name"></p>
+						<p><span class="name">Performer:</span><input type="text" class="form-control" placeholder="Performer Name"></p>						
+					</li>
+					<li>
+						<p>
+                        	<span class="name">Event Date:</span>
+                            <span class="input-daterange input-group" id="eventdatepicker">
+    							<input type="text" class="input-sm form-control" placeholder="From" name="start" />
+    							<span class="input-group-addon">-</span>
+    							<input type="text" class="input-sm form-control" placeholder="To" name="end" />
+							</span>
+						</p>
+						<p class="select_eventperiod_btn btn-group btn-group-toggle d-flex" data-toggle="buttons">
+							<label class="btn"><input type="radio" name="options" id="" autocomplete="off" checked="">All</label>
+							<label class="btn"><input type="radio" name="options" id="" autocomplete="off">Today</label>
+							<label class="btn"><input type="radio" name="options" id="" autocomplete="off">Tomorrow</label>
+							<label class="btn active"><input type="radio" name="options" id="" autocomplete="off">Within 7 Days</label>
+							<label class="btn"><input type="radio" name="options" id="" autocomplete="off">Within 30 Days</label>
+						</p>
+					</li>
+					<li>
+						<p>
+							<span class="name">Venue:</span>
+							<span class="selectbox">
+								<select class="form-control">
+									<option selected>Please select the venue</option>
+									<option>The Hong Kong Polytechnic University</option>
+									<option>The Hong Kong Polytechnic University</option>
+									<option>The Hong Kong Polytechnic University</option>									
+								</select>
+							</span>
+						</p>
+					</li>
+					<li>
+						<p>
+							<span class="name">Event Category:</span>
+							<span class="checkbox_group">
+								<span class="checkbox"><input type="checkbox" name="checkbox_allcat" value="" id="checkbox_allcat"><label for="checkbox_allcat"><i></i>All</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_music" value="" id="checkbox_music"><label for="checkbox_music"><i></i>Music</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_chinese_opera" value="" id="checkbox_chinese_opera"><label for="checkbox_chinese_opera"><i></i>Chinese Opera</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_dance" value="" id="checkbox_dance"><label for="checkbox_dance"><i></i>Dance</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_exhibition" value="" id="checkbox_exhibition"><label for="checkbox_exhibition"><i></i>Exhibition</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_film" value="" id="checkbox_film"><label for="checkbox_film"><i></i>Film</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_theatre" value="" id="checkbox_theatre"><label for="checkbox_theatre"><i></i>Theatre</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_multi_arts" value="" id="checkbox_multi_arts"><label for="checkbox_multi_arts"><i></i>Multi-Arts</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_pop_concerts" value="" id="checkbox_pop_concerts"><label for="checkbox_pop_concerts"><i></i>Pop Concerts</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_festivals" value="" id="checkbox_festivals"><label for="checkbox_festivals"><i></i>Festivals</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_family_entertainment" value="" id="checkbox_family_entertainment"><label for="checkbox_family_entertainment"><i></i>Family Entertainment</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_omnimax_show" value="" id="checkbox_omnimax_show"><label for="checkbox_omnimax_show"><i></i>Omnimax Show</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_sky_show" value="" id="checkbox_sky_show"><label for="checkbox_sky_show"><i></i>Sky Show</label></span>
+								<span class="checkbox"><input type="checkbox" name="checkbox_" value="others" id="checkbox_others"><label for="checkbox_others"><i></i>Others</label></span>
+							</span>
+						</p>
+					</li>
+					<li>
+						<p>
+							<span class="name">Ticket Price:</span>
+							<span class="checkbox_group">
+								<span class="checkbox"><input type="radio" name="checkbox_price" value="" id="checkbox_allprice"><label for="checkbox_allprice"><i></i>All</label></span>
+								<span class="checkbox"><input type="radio" name="checkbox_price" value="" id="checkbox_price1"><label for="checkbox_price1"><i></i>$100 or Under</label></span>
+								<span class="checkbox"><input type="radio" name="checkbox_price" value="" id="checkbox_price2"><label for="checkbox_price2"><i></i>$101-$300</label></span>
+								<span class="checkbox"><input type="radio" name="checkbox_price" value="" id="checkbox_price3"><label for="checkbox_price3"><i></i>$301-$500</label></span>
+								<span class="checkbox"><input type="radio" name="checkbox_price" value="" id="checkbox_price4"><label for="checkbox_price4"><i></i>$501 or Above</label></span>
+								<span class="minmax"><input type="text" class="form-control" placeholder="Min. Amount" id="minprice"><b>-</b><input type="text" class="form-control" placeholder="Max. Amount" id="maxprice"></span>
+							</span>
+						</p>
+					</li>
+				</ul>				
+			</div>
+			
+	        <div class="btn_container">
+				<div class="btnbox">
+					<a href="javascript:;" class="btn btn_grey">Clear All</a>
+				</div>
+				<div class="btnbox">
+					<a href="javascript:;" class="btn">Search</a>
+				</div>
+			</div>
+			
+    	</div>
+		
+		<div class="content interested hotevents">
+			<div class="container">
+			<div class="row">
+				<h1>Hot events you may be interested in...
+					<div class="controlbox">
+						<a class="carousel-control-prev" href="#carouselInterested" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselInterested" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</h1>
+
+				<div class="contentbox">
+					<div class="row">
+					<div id="carouselInterested" class="carousel slide" data-ride="carousel" data-interval="false">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+							<div class="events">
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2d.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2e.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2f.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2a.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2b.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2c.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="carousel-item">
+							<div class="events">
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2d.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2e.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2f.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2a.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2b.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2c.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="carousel-item">
+							<div class="events">
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2d.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2e.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2f.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2a.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2b.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+								<div class="showbox col-2">
+									<div class="event_img">
+										<a href="javascript:;"><img src="img/event/2c.jpg" class="img-fluid"></a>
+									</div>
+									<div class="event_shortinfo">
+										<p class="event_name">Dramtics Club, HKBU</p>
+										<p class="event_period">2019 Apr 02-03</p>
+										<a href="javascript:;" class="btn">More information</a>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+    </div>
+</div>
+
+	
+<footer>
+	<div class="footer_top">
+		<div class="container">
+		<div class="row">
+			<div class="newsletter col-lg-6 ">
+				<p class="head">Subscribe our E-newletter</p>
+				<p class="note">Subscribe our e-newsletter to follow up newest upcoming events and news.</p>
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Subscribe our E-newsletter">
+					<div class="input-group-append">
+						<button class="btn" type="button"></button>
+					</div>
+				</div>
+				<p class="note"><a href="javascript:;">View our latest e-newsletter</a></p>
+			</div>
+			<div class="related_links col-lg-6">
+				<p class="head">Related links</p>
+				<a href="javascript:;"><img src="img/logo_lcsd.png" class="img-fluid"></a>
+				<a href="javascript:;"><img src="img/logo_cityline.png" class="img-fluid"></a>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="footer_btm">
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-md-4 flinks">
+				<p><a href="javascript:;">Main Page</a></p>
+				<p><a href="javascript:;">About Us</a></p>
+				<p><a href="javascript:;">Fees</a></p>
+				<p><a href="javascript:;">Outlets</a></p>
+			</div>
+			<div class="col-lg-3 col-md-5 flinks">
+				<p><a href="javascript:;">UTDM</a></p>
+				<p><a href="javascript:;">Monthly Programme Pamphlet</a></p>
+				<p><a href="javascript:;">Security and Privacy</a></p>
+				<p><a href="javascript:;">Terms & Conditions</a></p>
+			</div>
+			<div class="col-lg-2 col-md-3 flinks">
+				<p><a href="javascript:;">FAQ</a></p>
+				<p><a href="javascript:;">Contact Us</a></p>
+				<p><a href="javascript:;">Site Map</a></p>
+			</div>
+			<div class="col-lg-5 col-md-12 copyright">
+				<p><img src="img/logo_gov.png" class="img-fluid"></p>
+				<p>URBTIX ticketing system powered by Cityline<br>© Cityline (Hong Kong) Ltd 1998 - 2019. All rights reserved.</p>
+			</div>
+		</div>
+		</div>
+	</div>
+</footer>
+
+</div><!-- outer end -->
+
+<!-- Scripts -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/locales/bootstrap-datepicker.en-HK.min.js"></script>
+<script src="js/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+<script src="js/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+</html>
